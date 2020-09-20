@@ -13,6 +13,10 @@
       "section": "Setup",
       "topics": [
         {
+          "title": "Add Post",
+          "slug": "add-post"
+        },
+        {
           "title": "Theme configuration",
           "slug": "theme-configuration"
         },
