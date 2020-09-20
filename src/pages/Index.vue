@@ -1,14 +1,13 @@
 <template>
   <Layout :sidebar="false">
     <div class="content">
-      <h1>{{ $static.metadata.siteName }} - {{ this.description }}</h1>
+      <h1>{{ $static.metadata.siteName }} Help Centre</h1>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
         <Shortcut link="/getting-started" text="Introduction" icon="play-icon" />
         <Shortcut link="/theme-configuration" text="Configuration" icon="sliders-icon" />
         <Shortcut link="/theme-configuration#changing-colors" text="Change colors" icon="eye-icon" />
       </nav>
-      <GitLink class="git" size="large" />
     </div>
   </Layout>
 </template>
@@ -22,12 +21,10 @@ query {
 </static-query>
 
 <script>
-import GitLink from '~/components/GitLink.vue'
 import Shortcut from '~/components/Shortcut.vue'
 
 export default {
   components: {
-    GitLink,
     Shortcut
   },
   data() {
